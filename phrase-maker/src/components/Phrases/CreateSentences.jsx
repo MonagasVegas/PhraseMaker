@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { CircularProgress } from '@chakra-ui/react'
 
 const CreateSentences = () => {
+  const [loader, setLoader] = useState(false)
+
   const {
     register,
     handleSubmit,
@@ -13,6 +16,10 @@ const CreateSentences = () => {
   const onSubmit = handleSubmit((data) => {
     console.log("🐉 ~ onSubmit ~ data:", data)
     console.log("Hicismos click");
+    setLoader(true)
+
+    //cuando responde el api
+    // setLoader(false)
   });
 
   return (
@@ -35,7 +42,7 @@ const CreateSentences = () => {
           <div className=" flex justify-center w-full py-5">
           <form
             onSubmit={onSubmit}
-            className="flex flex-col justify-center gap-5 w-10/12 xs:w-1/3 sm:w-10/12 md:w-1/3 lg:w-1/3 xl:w-1/3 "
+            className="flex flex-col justify-center gap-10 w-10/12 xs:w-1/3 sm:w-10/12 md:w-1/3 lg:w-1/3 xl:w-1/3 "
           >
             <div className="input-field">
               <label>Autor</label>
@@ -95,7 +102,12 @@ const CreateSentences = () => {
                 className="py-2 w-full font-semibold rounded-md bg-secondary text-black hover:text-white "
                 type="submit"
                 >
-                  Crear
+                  {
+                    loader ?
+                     <CircularProgress isIndeterminate color='#000'  thickness='10px' size='20px' /> 
+                    :
+                    'Crear'
+                  }
                 </button>
               </div>
 
