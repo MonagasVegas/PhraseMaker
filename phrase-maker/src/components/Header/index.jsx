@@ -5,8 +5,6 @@ const Header = () => {
   return (
     <div className=" w-full flex justify-between py-2 bg-[#1C1C1C]">
     <div className=" flex flex-col ml-7 w-20 justify-center items-center cursor-pointer">
-      {/* <h1 className="text-md text-white bg-[#49BFBF] rounded-sm px-2 items-center font-sedgwick ">DREAM</h1>
-      <h1 className="text-md text-white items-center font-serif  ">VIEW</h1> */}
       <img src={lectura} width={50} />
     </div> 
 
