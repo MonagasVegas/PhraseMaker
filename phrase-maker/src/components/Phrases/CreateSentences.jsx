@@ -19,6 +19,7 @@ const CreateSentences = () => {
   const onSubmit = handleSubmit((data) => {
     setLoader(true);
     const newData = {
+      id: generateUniqueId(),
       author: data.author,
       phrase: data.phrase,
     };
@@ -27,6 +28,15 @@ const CreateSentences = () => {
     setLoader(false);
     navigate("/");
   });
+
+  const generateUniqueId = () => {
+    const allData = auth || [];
+    // Generar un ID único basado en la longitud de los datos existentes
+    const id =
+      allData.length > 0 ? Math.max(...allData.map((data) => data.id)) + 1 : 1;
+
+    return id;
+  };
 
   return (
     <>
