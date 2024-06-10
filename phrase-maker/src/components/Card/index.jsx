@@ -56,7 +56,7 @@ const Card = () => {
 
   return (
     <div className="">
-      <div className=" py-4">
+      <div className=" w-full flex justify-center  ">
         <SearchBar onChange={handleSearchQuery} placeholder="Buscar frases" />
       </div>
 
