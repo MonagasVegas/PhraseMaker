@@ -1,0 +1,28 @@
+.input-search {
+  position: relative;
+}
+
+.input-search input {
+  margin-left: 25%;
+  width: 50%;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 0 15px;
+  border: 2px solid #554f95;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+  color-scheme: dark;
+}
+
+.input-search input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../../assets/svg/SearchIcon.svg");
+  background-repeat: no-repeat;
+  background-position: right 3rem center;
+  background-size: 1em;
+}
