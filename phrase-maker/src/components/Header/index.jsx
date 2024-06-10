@@ -15,7 +15,7 @@ const Header = () => {
         <img onClick={handleClickHome} src={lectura} width={50} />
       </div>
 
-      <div className="flex gap-5 py-2 mr-7">
+      <div className="flex w-full justify-end  gap-4 py-2 px-4 ">
         <Link
           to="/"
           className="text-gray-500 hover:text-white font-normal text-md items-center justify-center py-2"
@@ -23,13 +23,16 @@ const Header = () => {
           Inicio
         </Link>
 
-        <Link className="text-gray-500 hover:text-white font-normal text-md items-center justify-center py-2">
+        <Link
+          to="/contact"
+          className="text-gray-500 hover:text-white font-normal text-md items-center justify-center py-2"
+        >
           Contáctenos
         </Link>
 
         <Link
           to="/create"
-          className="bg-[#554F95] px-4 py-2 rounded-md text-white font-bold text-md"
+          className="bg-[#554F95] px-2 py-2 rounded-md text-white font-bold text-md "
         >
           Crear Frase
         </Link>

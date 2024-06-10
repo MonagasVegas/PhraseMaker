@@ -110,7 +110,7 @@ const CreateSentences = () => {
             </div>
 
             <div className="flex items-center justify-center py-7 gap-5 w-full xs: flex-col sm:flex-row md:flex lg:flex-row xl:flex-row ">
-              <div className="w-1/2">
+              <div className="w-full">
                 <button
                   className="py-2 w-full font-semibold rounded-md bg-secondary text-black hover:text-white "
                   type="submit"
@@ -128,7 +128,7 @@ const CreateSentences = () => {
                 </button>
               </div>
 
-              <div className="w-1/2">
+              <div className=" w-full ">
                 <Link
                   to="/"
                   className=" w-full flex items-center py-2 justify-center text-black font-semibold rounded-md  bg-secondary   text-md  hover:text-white"
