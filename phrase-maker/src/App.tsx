@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create"  element={<CreateSentences />} />
+        <Route path='*' element={<p>Not Found</p>} />
       </Routes>
     </HashRouter>
     </>

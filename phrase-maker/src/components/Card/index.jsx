@@ -3,7 +3,6 @@ import data from "./data.js";
 import cita from "../../assets/images/cita.png";
 
 const Card = () => {
-  console.log("🐉 ~ data:", data);
 
   return (
     <div className="py-10">
