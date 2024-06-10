@@ -3,7 +3,7 @@ import cita from "../../assets/images/cita.png";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { isEmpty } from "lodash";
 import SearchBar from "../Search/index";
-import TrashBin from "../../assets/svg/TrashBin.svg";
+
 import {
   Modal,
   ModalOverlay,
