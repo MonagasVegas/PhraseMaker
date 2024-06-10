@@ -5,10 +5,9 @@ import Header from "../Header";
 const ContactUs = () => {
   return (
     <div>
- <div>
+      <div>
         <Header />
       </div>
-
 
       <div className="flex justify-center py-10 ">
         <h1 className="text-3xl font-semibold mb-4 text-white">
