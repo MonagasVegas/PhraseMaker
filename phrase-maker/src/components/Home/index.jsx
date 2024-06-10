@@ -10,7 +10,7 @@ const Home = () => {
       </div>
       <br />
       <br />
-      <div>
+      <div >
         <Card />
       </div>
     </div>
