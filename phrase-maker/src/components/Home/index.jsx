@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../Header";
 import Card from "../Card";
 
@@ -9,9 +9,8 @@ const Home = () => {
       <div>
         <Header />
       </div>
-
       <div>
-        <Card />
+        <Card  />
       </div>
     </div>
   );

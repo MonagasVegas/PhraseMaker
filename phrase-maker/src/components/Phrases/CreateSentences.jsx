@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CircularProgress } from "@chakra-ui/react";
-import useLocalStorage from '../hooks/useLocalStorage'
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const CreateSentences = () => {
   const [loader, setLoader] = useState(false);
   const [auth, setAuth] = useLocalStorage("@auth", []);
+  const navigate = useNavigate();
 
   const {
     register,
@@ -21,9 +22,10 @@ const CreateSentences = () => {
       author: data.author,
       phrase: data.phrase,
     };
-  
-    setAuth([...auth , newData])
+
+    setAuth([...auth, newData]);
     setLoader(false);
+    navigate("/");
   });
 
   return (
