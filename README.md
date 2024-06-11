@@ -1,1 +1,3 @@
-# PhraseMaker
+Esta es una aplicación creada en React que te permite agregar frases y mostrarlas en tarjetas dentro de una matriz. Además, puedes buscar por frase o autor, lo que filtra automáticamente las tarjetas que contienen el texto ingresado a medida que comienzas a escribir. También tienes la opción de eliminar frases.
+
+Para ejecutar el proyecto localmente, sigue estos pasos: primero, clona el repositorio; luego, ejecuta el comando 'npm install'; finalmente, inicia el proyecto con 'npm run dev'. Entre las tecnologías utilizadas en este proyecto web se encuentran Git, GitHub, HTML, CSS, React, TypeScript, Chakra UI, React Testing Library y Lodash, entre otros.
